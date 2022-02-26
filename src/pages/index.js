@@ -11,9 +11,8 @@ export default function Home() {
         <title>Pokemon</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-
+      <Header />
       <main className="min-h-screen bg-slate-800 text-slate-300">
-        <Header />
         <Dictionary />
       </main>
     </div>
