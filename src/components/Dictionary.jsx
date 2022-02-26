@@ -12,12 +12,10 @@ const Dictionary = () => {
   if (error) return <div>error...</div>;
 
   return (
-    <div className="pt-2 pb-24 bottom-0 overflow-y-auto ">
-      <div className="flex flex-wrap w-11/12 mx-auto gap-8">
-        {data?.pokemons?.map((pokemon) => (
-          <Card data={pokemon} key={pokemon.id} />
-        ))}
-      </div>
+    <div className="flex flex-wrap w-11/12 mx-auto gap-8">
+      {data?.pokemons?.map((pokemon) => (
+        <Card data={pokemon} key={pokemon.id} />
+      ))}
     </div>
   );
 };

@@ -1,21 +1,22 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Main from "../components/Main";
 import Dictionary from "../components/Dictionary";
 import { initializeApollo } from "../lib/apollo";
 import { GET_POKEMONS } from "../graphql/getPokemon";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Pokemon</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className="min-h-screen bg-slate-800 text-slate-300">
+      <Main>
         <Dictionary />
-      </main>
-    </div>
+      </Main>
+    </>
   );
 }
 
