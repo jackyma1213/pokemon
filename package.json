@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
     "autoprefixer": "^10.4.2",
+    "graphql": "^16.3.0",
+    "lodash": "^4.17.21",
     "next": "12.1.0",
     "postcss": "^8.4.6",
     "react": "17.0.2",
